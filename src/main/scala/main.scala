@@ -38,6 +38,30 @@ def main(): Unit =
   val hOrderFunc = new HigherOrderFuncDemo
   hOrderFunc.higherOrderFuncExample()
 
+  println("----------------------------------------------")
+  println("- Closures Functions example")
+  val closureFunc = new ClosuresFuncDemo
+  closureFunc.closureFuncExample1()
+  closureFunc.closureFuncExample2()
+
+  println("----------------------------------------------")
+  println("- Single Nested Function example")
+  val nestedFunc = new NestedFuncDemo
+  println("Min and Max from 5, 7")
+  nestedFunc.maxAndMin(5, 7);
+
+  println("- Multiple Nested Function example")
+  nestedFunc.funTestMultiNested()
+
+  println("----------------------------------------------")
+  println("- Parameterless Method example")
+  val parameterless = new ParameterlessMethod("Darvin", 50)
+  parameterless.author
+  parameterless.article
+  parameterless.printInformation()
+
+
+
 
 
 
