@@ -60,6 +60,19 @@ def main(): Unit =
   parameterless.article
   parameterless.printInformation()
 
+  println("----------------------------------------------")
+  println("- Partially applied functions example")
+  val appliedFunc = new PartiallyAppliedFuncDemo
+  appliedFunc.AppliedFuncExample1()
+  appliedFunc.AppliedFuncExample2()
+  appliedFunc.AppliedFuncExample3()
+  appliedFunc.AppliedFuncExample4()
+
+  println("----------------------------------------------")
+  println("- Partially applied functions example")
+
+
+
 
 
 
