@@ -1,3 +1,5 @@
+import overriding.MethodOverridingDemo
+
 @main
 def main(): Unit =
   println("----------------------------------------------")
@@ -69,12 +71,20 @@ def main(): Unit =
   appliedFunc.AppliedFuncExample4()
 
   println("----------------------------------------------")
-  println("- Partially applied functions example")
+  println("- Method Overloading example")
+  val mOverloading = new MethodOverloadingDemo
+  mOverloading.funcExample1(6, 8)
+  mOverloading.funcExample1(5, 10, 58)
 
+  mOverloading.funcExample2(6, 8, 10)
+  mOverloading.funcExample2(5.9, 10.01, 58.7)
 
+  mOverloading.funcExample3("Rolex", 10)
+  mOverloading.funcExample3("Omega", 10)
 
-
-
-
-
-
+  println("----------------------------------------------")
+  println("- Method Overriding example")
+  val mOverriding = new MethodOverridingDemo
+  mOverriding.printResultMethodOverriding1()
+  mOverriding.printResultMethodOverriding2()
+  mOverriding.printResultMethodOverriding3()
