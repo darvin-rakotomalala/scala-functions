@@ -88,3 +88,15 @@ def main(): Unit =
   mOverriding.printResultMethodOverriding1()
   mOverriding.printResultMethodOverriding2()
   mOverriding.printResultMethodOverriding3()
+
+  println("----------------------------------------------")
+  println("- Format and Formated Method example")
+  val formatMethod = new FormatMethodDemo
+  formatMethod.formatMethodExample1()
+  formatMethod.formatMethodExample2()
+  formatMethod.formattedMethodExample3()
+
+  println("----------------------------------------------")
+
+
+  
