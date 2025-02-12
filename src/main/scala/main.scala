@@ -1,3 +1,4 @@
+import access_modifier.{ControllingMethodScopeDemo, PackageSpecificDemo, PrivateProtectedScopeDemo, PrivateScopeDemo, PublicScopeDemo}
 import overriding.MethodOverridingDemo
 
 @main
@@ -97,6 +98,39 @@ def main(): Unit =
   formatMethod.formattedMethodExample3()
 
   println("----------------------------------------------")
+  println("- Controlling Method Scope example")
 
+  println("- Public Scope example")
+  val publicScope = new PublicScopeDemo
+  publicScope.publicMethod1()
 
-  
+  println("- Private Scope example")
+  val privateScope = new PrivateScopeDemo
+  printf("x = " + privateScope.x)
+  // privateScope.privateMethod1() // Will throw an error
+  println()
+
+  println("- Protected Scope example")
+  val accessModifier = new ControllingMethodScopeDemo
+  accessModifier.printProtectedScope()
+
+  println("- Private/Protected Scope example")
+  var privateProtected = new PrivateProtectedScopeDemo()
+  var y = 2
+  println(privateProtected.printPrivateProtected(privateProtected))
+  println(privateProtected.z)
+  // println(privateProtected.t) // error: t cannot be accessed
+  // println(privateProtected.x) // error: x can only be accessed from class PrivateProtectedScopeDemo
+
+  println("- Package Specific example")
+  val packageSpecific = new PackageSpecificDemo
+  val subClass = new packageSpecific.g1
+  subClass.methodExample()
+  // println("b= " + subClass.b) // variable b can only be accessed from package access_modifier
+
+  println("----------------------------------------------")
+  println("- Repeated Method Parameters example")
+  val repeatParam = new RepeatedMethodParametersDemo
+  repeatParam.addExample()
+  repeatParam.mulExample()
+  repeatParam.showStrExample()
