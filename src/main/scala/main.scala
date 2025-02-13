@@ -134,3 +134,14 @@ def main(): Unit =
   repeatParam.addExample()
   repeatParam.mulExample()
   repeatParam.showStrExample()
+
+  println("----------------------------------------------")
+  println("- Partial Functions example")
+  val partialFunc = new PartialFuncDemo
+  partialFunc.printResultExample1()
+  partialFunc.printResultCaseStatement()
+  partialFunc.printResultOrElse()
+  partialFunc.printResultCollect()
+  partialFunc.printResultAndThen()
+  
+  
