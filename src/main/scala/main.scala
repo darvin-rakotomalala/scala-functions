@@ -143,5 +143,17 @@ def main(): Unit =
   partialFunc.printResultOrElse()
   partialFunc.printResultCollect()
   partialFunc.printResultAndThen()
+
+  println("----------------------------------------------")
+  println("- Lambda Expression example")
+  val lambdaExp = new LambdaExpressionDemo
+  lambdaExp.lambdaExpExample1()
+  lambdaExp.transCollectionExample2()
+  lambdaExp.transCollectionExample3()
+  lambdaExp.printResultTransform1()
+  lambdaExp.printResultTransform2()
+
+  println("----------------------------------------------")
+
   
   
