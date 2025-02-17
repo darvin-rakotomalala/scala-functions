@@ -154,6 +154,20 @@ def main(): Unit =
   lambdaExp.printResultTransform2()
 
   println("----------------------------------------------")
+  println("- Varargs example")
+  val varargs = new VarargsDemo
+  varargs.printResultVarargs1()
+  varargs.printResultVarargs2()
+
+  println("----------------------------------------------")
+  println("- Function Composition example")
+  val funcComp = new FuncCompositionDemo
+  funcComp.printResultExample1()
+  funcComp.printResultExample2()
+  funcComp.printResultExample3()
+
+  println("----------------------------------------------")
+  
 
   
   
