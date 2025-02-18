@@ -1,5 +1,6 @@
 import access_modifier.{ControllingMethodScopeDemo, PackageSpecificDemo, PrivateProtectedScopeDemo, PrivateScopeDemo, PublicScopeDemo}
 import overriding.MethodOverridingDemo
+import superclass.{ScalaDemo, Student}
 
 @main
 def main(): Unit =
@@ -167,7 +168,19 @@ def main(): Unit =
   funcComp.printResultExample3()
 
   println("----------------------------------------------")
-  
+
+  /**
+   * This concept is used when we want to call super class method. So whenever a base
+   * and subclass have same named methods then to resolve ambiguity we use super keyword
+   * to call base class method. The keyword “super” came into this with the concept of Inheritance.
+   */
+
+  println("- Call a method on a Super Class example")
+  val callSC1 = new ScalaDemo
+  callSC1.readThanWrite()
+
+  val callSC2 = new Student
+  callSC2.display()
 
   
   
